@@ -1,0 +1,88 @@
+/* specificity, universal */
+/* Global rest */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*  box-sizing : contentbox -> width + margin + border */
+/* borders box  -> width = width + margin + border */
+
+/* 
+.class -> USE A DOT WITH CLASSES
+#id -> USE A HASHTAG FOR ID's
+selector {
+  CSS DECLARATIONS
+  PROPERTY : VALUE ; 
+}
+*/
+
+body {
+  font-family: sans-serif;
+  /* setting a limit to how far it can go */
+  width: 1400px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  /* settting a fixed height */
+  padding: 40px;
+  color: rgb(94, 92, 89);
+}
+
+h1 {
+  font-size: 200px;
+}
+
+/* Below is more specific , therefore it will always override */
+
+header h1 {
+  font-size: 40px;
+}
+
+.card {
+  max-width: 300px;
+  width: 300px;
+  /* height is set to auto by default */
+  height: auto;
+  border: 5px solid gray;
+  border-radius: 5px;
+  /* text align can be used with images */
+  text-align: center;
+  /* hex code / predefined colour */
+  background-color: #eee;
+  color: midnightblue;
+  padding: 20px;
+  /* opacity 0 - 1 */
+  opacity: .5;
+}
+
+.card:hover {
+  opacity: 1;
+}
+
+.card img {
+  margin: 10px;
+  min-height: 300px;
+  border-radius: 5px;
+}
+
+/* chain element together with , */
+h2, h3, h4, h5, h6 {
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+/* select id's */
+
+#penelope-list {
+  list-style: none;
+}
+
+a,
+a:active,
+a:visited {
+  color: brown;
+}
