@@ -86,3 +86,40 @@ a:active,
 a:visited {
   color: brown;
 }
+
+#king-and-queen {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+
+}
+
+#children {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#susan {
+  border: 2px solid green;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.line-container {
+display: flex;
+justify-content: space-evenly;
+}
+
+.line-container-bottom {
+display: flex;
+justify-content: flex-end;
+margin-right: 20%;
+
+}
+
+.line {
+  width: 5px;
+  height: 100px;
+  background-color: navy;
+}
